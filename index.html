@@ -1,310 +1,441 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Playbook: Sesión 2 - 3ro Preparatotia.</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-S3-TM2</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 2 - 3ro Preparatotia.</strong></h1>
-    <div class="header-widgets">
-      <div class="timer-container">
-        <span id="timer">⏱️ 00:00</span>
-        <button id="startStop">Start</button>
-        <button id="reset">Reset</button>
-      </div>
-      <div class="theme-toggle">
-        <i class="fas fa-sun"></i>
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle-input">
-          <span class="slider round"></span>
-        </label>
-        <i class="fas fa-moon"></i>
-      </div>
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 2 - 3o de Preparatoria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar WebWave, JDoodle y GitHub para separar Frontend/Backend/DB e identificar APIs externas para representar interacciones en un diagrama y comprender el pensamiento sistémico y el control humano sobre decisiones estratégicas.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Ayúdame a traducir mi idea de aplicación en un plano de arquitectura de software. Te comparto mi concepto: [describe tu idea brevemente]. Indícame cómo se dividiría en Frontend, Backend y Base de Datos, y qué APIs externas serían útiles para su funcionamiento. Explícame por qué esas decisiones tecnológicas son las más adecuadas para mi propuesta. Finalmente, guíame para representarlo con un diagrama comentado.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Pensamiento Sistémico: Entender cómo las diferentes partes de una aplicación (como la pantalla, el cerebro y la memoria) se conectan y trabajan juntas como un todo.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar herramientas digitales para diseñar la estructura de una aplicación y elegir servicios externos que la mejoren.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes flujos de datos y APIs externas para entender limitaciones en la privacidad y dependencia tecnológica.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Dispositivo con acceso a internet (1 por cada estudiante)</label>
+                        <label><input type="checkbox"> Acceso a WebWave, JDoodle, GitHub, ChatGPT, Gemini y Claude</label>
+                        <label><input type="checkbox"> Hojas de papel o pizarra digital para bocetos de diagramas</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa herramientas de diseño web y entornos de ejecución de código</label>
+                        <label><input type="checkbox"> 📋 Para esta misión: Asegúrate de tener cuentas activas en las plataformas mencionadas</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Mantener tus contraseñas seguras, cerrar sesiones en computadoras públicas y organizar tus archivos digitales.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre pensamiento sistémico y arquitectura de software (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si las plataformas de software no cargan:</strong> Verificar la conexión a internet y recargar la página. Intentar abrir en modo incógnito.</li><li><strong>Si hay dudas sobre la arquitectura:</strong> Recordar a los estudiantes que XOLO puede explicar cada componente de diferentes maneras. Pídeles que le den un ejemplo de la vida real.</li><li><strong>Si hay errores en el código o lógica:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
+            <div class="activity-card" id="activity-1">
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "Hoy diseñarán el esqueleto inteligente de su propia creación digital".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Arquitectura de Software y Pensamiento Sistémico.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A diseñar planos de arquitectura de software para que sus ideas se conviertan en aplicaciones reales y escalables.</p>
+                        <p><strong>Aplicación real:</strong> Los ingenieros de software en empresas como Netflix o Spotify usan esta tecnología para organizar cómo millones de usuarios ven películas o escuchan música sin errores.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 2: A.I. GYM -->
+            <div class="activity-card" id="activity-2">
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo se divide una aplicación en Frontend, Backend y Base de Datos de forma sencilla.</li>
+                            <li>Introduce el concepto de pensamiento sistémico y por qué es vital antes de programar.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a estructurar una idea técnica usando Frontend, Backend y DB.</li>
+                            <li>Aprender sobre pensamiento sistémico y la importancia del control humano.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
+                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar IA como consultor para diseñar la arquitectura de una aplicación y entender el pensamiento sistémico.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Hola a todos! Ahora vamos a dar un paso gigante en su camino como creadores digitales. Hoy vamos a aprender a pensar como arquitectos de software. Abran su chat con XOLO y simplemente salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él sobre cómo se estructuran las aplicaciones modernas. Él les explicará qué es eso del Frontend, el Backend y las Bases de Datos. Aprovechen para preguntarle todo lo que no entiendan, ¡él es su consultor experto!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
+            <div class="activity-card" id="activity-3">
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los herramientas de desarrollo conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique pensamiento sistémico y arquitectura.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para definir la arquitectura de su proyecto.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Revisar la viabilidad de las APIs externas sugeridas y probar.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Con Vibe Coding, ayúdame a convertir mi idea en un diagrama de arquitectura comentado: define el usuario principal, el flujo central y qué datos se almacenan. Luego guía mi decisión de: (1) componentes mínimos, (2) una API externa útil, (3) riesgos (privacidad, dependencia). Ejecuta: entrega el guion de mi diagrama (qué dibujo y qué comentario pongo en cada bloque) y cómo lo presentaré como pitch técnico."</pre>
+                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿El flujo de datos entre el usuario y la base de datos es lógico y directo?</li>
+                            <li>¿Qué pasaría con la privacidad de los usuarios si la API externa falla o es insegura?</li>
+                            <li>¿Funciona igual tu arquitectura si decides cambiar el Frontend de WebWave a otra plataforma?</li>
+                            <li>¿Cómo ayuda el pensamiento sistémico a prever problemas antes de escribir la primera línea de código?</li>
+                            <li>¿Por qué es fundamental que el humano mantenga el control estratégico sobre las decisiones que propone la IA?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear! Vamos a transformar sus ideas en planos reales. Usen el prompt que ven en pantalla para que XOLO los guíe en la creación de un diagrama de arquitectura. Imaginen, por ejemplo, una app que use una API de mapas para ayudar a personas a encontrar centros de reciclaje cercanos. XOLO les dará el 'Vibe' y el GCS para su diagrama. No se queden solo con lo que les diga, cuestionen y ajusten. Si tienen errores o dudas sobre cómo conectar una API o qué base de datos usar, pregúntenle a XOLO, él los ayudará a depurar su lógica arquitectónica. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con la arquitectura básica. ¿Puedes enseñarme cómo hacer que mi aplicación sea más segura usando autenticación de dos factores y cómo escalarla para miles de usuarios?"</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
+            <div class="activity-card" id="activity-4">
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué componentes de su arquitectura funcionan bien juntos.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué partes de tu arquitectura conectan mejor? ¿Qué te sorprendió de la función de las APIs?</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi arquitectura conecta el Frontend con una API de servicios externos. Me sorprendió que la base de datos fuera tan importante para la persistencia."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
+            <div class="activity-card" id="activity-5">
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-  </header>
-  <div class="main-container">
-    <aside class="activity-list">
-      <h2>Actividades</h2>
-      <ul>
-        <li><a href="#activity-0">📝</a></li>
-        <li><a href="#activity-1">1</a></li>
-        <li><a href="#activity-2">2</a></li>
-        <li><a href="#activity-3">3</a></li>
-        <li><a href="#activity-4">4</a></li>
-        <li><a href="#activity-5">5</a></li>
-      </ul>
-      <div class="sidebar-info">
-        <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-        <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-      </div>
-    </aside>
-    <main class="content">
-      <div class="progress-bar">
-        <div class="progress"></div>
-      </div>
-      <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
-      <!-- 0) De un Vistazo -->
-      <section class="activity-card" id="activity-0">
-        <h2 class="activity-title">📝 De un Vistazo: Sesión 2 - 3ro Preparatotia.</h2>
-        <p class="activity-purpose">Resumen de objetivos, secuencia y entregables.</p>
-        <div class="overview-table-container">
-          <table>
-            <thead>
-              <tr>
-                <th style="width: 50%;">Objetivos, Secuencia y Entregable</th>
-                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <strong>Objetivos de aprendizaje:</strong>
-                  <p>Al final de la sesión, los estudiantes podrán:</p>
-<ul>
-<li>Traducir una idea de producto en un prompt claro y estructurado para solicitar una arquitectura de software a un LLM.</li>
-<li>Generar un diagrama de arquitectura que identifique los componentes clave (Frontend, Backend, Base de Datos) y sus interacciones.</li>
-<li>Justificar las elecciones tecnológicas y la integración de APIs externas en el diseño de su aplicación.</li>
-<li><strong>Objetivo general de la sesión:</strong> Que los estudiantes aprendan a utilizar un LLM como un consultor de arquitectura para transformar una idea de producto en un plano técnico estructurado y justificado.</li>
-</ul>
-                  <strong>Secuencia y tiempos</strong>
-                  <ol>
-                    <li><strong>Actividad 1:</strong> Saludo Interactivo con IA — 3 min</li>
-                    <li><strong>Actividad 2:</strong> “I Can” + Desafío — 5–7 min</li>
-                    <li><strong>Actividad 3:</strong> AI GYM — 10–12 min</li>
-                    <li><strong>Actividad 4:</strong> Brain Spark — 17–20 min</li>
-                    <li><strong>Actividad 5:</strong> GNIUS STORM — 5 min</li>
-                  </ol>
-                  <strong>Entregable del Micro-Proyecto</strong>
-                  <ul>
-                    <li>Un diagrama de arquitectura de software comentado para una idea de aplicación propia, mostrando componentes (frontend, backend, DB, APIs externas) e interacciones, respaldado por el diálogo con un LLM.</li>
-                  </ul>
-                  <strong>Criterios de calidad</strong>
-                  <ul>
-                    <li>Claridad y completitud del diagrama de arquitectura.</li>
-                    <li>Trazabilidad entre la idea de producto, el prompt al LLM y la arquitectura resultante.</li>
-                    <li>Justificación de las elecciones tecnológicas y APIs externas sugeridas por el LLM.</li>
-                    <li>Identificación correcta de componentes (Frontend, Backend, Base de Datos, APIs).</li>
-                    <li>Representación clara de las interacciones entre los componentes.</li>
-                  </ul>
-                </td>
-                <td>
-                  <strong>Materiales Específicos:</strong>
-                  <ul>
-                    <li>Proyector e internet</li>
-                    <li>Acceso a un LLM (ej. ChatGPT, Gemini, Claude)</li>
-                    <li>Herramienta de diagramación (ej. Miro, Lucidchart, o papel y lápiz)</li>
-                    <li>Ejemplo mínimo de idea de producto y prompt de arquitectura.</li>
-                    <li>Presentación (11 diapositivas)</li>
-                  </ul>
-                  <strong>Preparación Previa para ESTA Sesión:</strong>
-                  <ol>
-                    <li><strong>Verificación del Entorno Digital:</strong>
-                      <ul>
-                        <li>Asegurar acceso a internet y a la herramienta LLM.</li>
-                        <li>Tener lista una herramienta de diagramación o materiales para dibujar.</li>
-                      </ul>
-                    </li>
-                    <li><strong>Familiarización Conceptual:</strong> Repasar los conceptos de arquitectura de software (Frontend, Backend, DB, APIs) y el rol de un LLM como consultor.</li>
-                    <li><strong>Preparación de Ejemplos:</strong> Tener un ejemplo simple de una idea de aplicación y un prompt de arquitectura para el LLM, junto con un diagrama básico de la respuesta esperada.</li>
-                  </ol>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- 1) Saludo Interactivo con IA -->
-      <section class="activity-card" id="activity-1">
-        <h2 class="activity-title">Saludo Interactivo con IA</h2>
-        <p class="activity-purpose">Enmarcar foco y activar a Xolo con perfil/intereses.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 2) Presenta el tema y su valor profesional.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Equipo: hoy nos convertimos en <strong>arquitectos de software</strong>. Nuestra misión es transformar una idea abstracta en un <strong>plano técnico detallado</strong>, utilizando la <strong>inteligencia artificial</strong> como nuestro <strong>consultor principal</strong>. Aprenderemos a diseñar la <strong>estructura de una aplicación</strong> antes de construirla, asegurando una base sólida para el <strong>desarrollo full-stack</strong>.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Activación con Xolo</h3>
-              <p class="step-instructions">Cada estudiante envía a Xolo: “Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Estoy en la sesión de arquitectura de software.”</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Confirmen que comprendieron el criterio de hoy y sigan sus indicaciones personalizadas. Por ejemplo: 'Hola Xolo, soy [Nombre], perfil [X]; hoy la misión es sobre <strong>arquitectura de software</strong>. Necesito foco en el <strong>diseño de sistemas</strong> y la <strong>justificación de decisiones tecnológicas</strong>'.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 2) “I Can” + Desafío -->
-      <section class="activity-card" id="activity-2">
-        <h2 class="activity-title">“I Can Statement” + Desafío</h2>
-        <p class="activity-purpose">Alinear expectativas y definir el reto práctico.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Presenta el reto</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 3) Describe el reto y la meta observable.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">El reto es convertir una idea de aplicación en un <strong>diagrama de arquitectura funcional y comentado</strong>. Evaluaremos la claridad, la lógica de los componentes y la justificación de las decisiones de diseño. La evidencia será su diagrama y el diálogo con el LLM.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 4) Cada estudiante redacta 1 “I Can” alineado al entregable.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Formula tu “Puedo…” en 1 frase: acción + criterio + resultado. Ej.: “Puedo [acción] usando [criterio] para lograr [resultado].” Hoy, esto se traduce en: 'Puedo <strong>traducir una idea de producto en un prompt de arquitectura de software claro para un LLM</strong> y puedo <strong>generar y comentar un diagrama de arquitectura de software que incluya componentes clave y sus interacciones</strong>'.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 3) AI GYM -->
-      <section class="activity-card" id="activity-3">
-        <h2 class="activity-title">AI GYM</h2>
-        <p class="activity-purpose">Formalizar el marco/técnica/herramienta central de la misión.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Marco del día</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 5) Introduce el marco de Arquitectura de Software.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Hoy, nuestro marco es la <strong>Arquitectura de Software</strong>, y el <strong>LLM</strong> será nuestro <strong>consultor principal</strong>. Este marco agrega valor porque nos permite visualizar la <strong>estructura de un proyecto</strong> complejo antes de invertir tiempo en el desarrollo. Eviten el error común de empezar a codificar sin un <strong>plano claro</strong>, y el de aceptar la primera respuesta del LLM sin cuestionarla. Usen el <strong>razonamiento crítico</strong> y la <strong>interpelación</strong> para validar los resultados.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Mini-demostración</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 6) Modela en vivo cómo usar un LLM para diseñar una arquitectura.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant"><strong>“Xolo, ayúdame a traducir mi idea de aplicación en un plano de arquitectura de software. Te comparto mi concepto: [describe tu idea brevemente]. Indícame cómo se dividiría en Frontend, Backend y Base de Datos, y qué APIs externas serían útiles para su funcionamiento. Explícame también por qué esas decisiones tecnológicas son las más adecuadas para mi propuesta. Finalmente, guíame para representar visualmente esta arquitectura con un diagrama comentado.”</strong></p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 3 — Check rápido</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 7) Verifica comprensión con 2 preguntas breves.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Pregunta 1: ¿Por qué es crucial definir la <strong>arquitectura</strong> antes de codificar? Pregunta 2: ¿Qué <strong>tres componentes principales</strong> debe tener una arquitectura de software básica?</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 4) Brain Spark -->
-      <section class="activity-card" id="activity-4">
-        <h2 class="activity-title">Brain Spark</h2>
-        <p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Producción</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 8) Indica la creación del diagrama de arquitectura y el checklist de calidad. Tiempo de trabajo autónomo.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">N/A</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Iteración</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 9) Pide una mejora concreta basada en los criterios del marco.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Antes de cerrar: valida que tu <strong>diagrama</strong> sea claro, que cada <strong>componente</strong> tenga una <strong>justificación lógica</strong> y que las <strong>interacciones</strong> sean coherentes. Si el <strong>LLM</strong> no justificó una <strong>elección tecnológica</strong> (ej. por qué usar una <strong>API</strong> específica), interrógalo para que lo haga. Si no se cumple, ajusta y vuelve a probar.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 3 — Evidencia</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 10) Solicita la entrega del diagrama y el diálogo con el LLM.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Entrega con nombre: S02_Arquitectura_[TuNombre]. Incluye tu <strong>diagrama de arquitectura</strong> (como imagen o enlace) y el <strong>diálogo completo con el LLM</strong> que te ayudó a generarlo. Asegúrate de que el diagrama esté comentado y muestre las interacciones.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 5) GNIUS STORM -->
-      <section class="activity-card" id="activity-5">
-        <h2 class="activity-title">GNIUS STORM</h2>
-        <p class="activity-purpose">Exhibir resultados y cerrar con síntesis accionable.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Showcase relámpago</h3>
-              <p class="step-instructions">2–3 presentaciones de 30–45 s, centradas en evidencia y criterio.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Enfoca tu presentación en la <strong>idea de tu aplicación</strong>, la <strong>decisión clave</strong> que tomaste con la ayuda del <strong>LLM</strong> en la <strong>arquitectura</strong>, y cómo el <strong>diagrama</strong> lo representa.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 11) Síntesis: 1 aprendizaje, 1 criterio de mayor impacto y 1 siguiente paso fuera del aula.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Síntesis: Hoy aprendimos que la <strong>IA</strong> es una herramienta poderosa para la <strong>dirección de proyectos</strong>, especialmente en la fase de <strong>arquitectura</strong>. El criterio clave fue la capacidad de traducir una idea en un <strong>plano técnico</strong> y justificar las <strong>decisiones de diseño</strong>. Siguiente paso aplicado: Utilicen este <strong>diagrama</strong> como base para la próxima fase de desarrollo, ya sea para definir el alcance de su <strong>frontend</strong> o el <strong>contrato de su API</strong>.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html></html>
